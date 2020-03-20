@@ -1,0 +1,25 @@
+{
+  "name": "my-app",
+  "version": "1.0.0",
+  "description": "My new first app",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edossantos241/TP_NodeJS.git"
+  },
+  "keywords": [
+    "NodeJS"
+  ],
+  "author": "Emma DOS SANTOS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edossantos241/TP_NodeJS/issues"
+  },
+  "homepage": "https://github.com/edossantos241/TP_NodeJS#readme",
+  "dependencies": {
+    "pug": "^2.0.4"
+  }
+}
