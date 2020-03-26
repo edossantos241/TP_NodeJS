@@ -1,5 +1,7 @@
 const fs = require('fs');
 const pug = require('pug')
+const express = require('express');
+const app = express();
 
 const compiledFunction = pug.compileFile('template.pug');
 
@@ -16,6 +18,8 @@ const port = 3000;
 //    console.error('Missing argument!');
 //    process.exit(1);
 //}
+
+app.use(express.static(path.join(__dirname,'public')));
 
 var donnees = "";
 var U1 = '';
@@ -43,11 +47,8 @@ function lireFichier(fichier){
 }
 
 
-const server = http.createServer(
-    (request, res) => {
-        //var urlpath = url.parse(request.url).pathname;
-        //fs.exists(localpath, function(result) { console.log(localpath)});
-        var params = url.parse(request.url).query;
+app.get('/', (req, res) => {
+        var params = url.parse(req.url).query;
         
         if (params != null) {
             var paramArray = params.split(/=/);
@@ -66,6 +67,6 @@ const server = http.createServer(
     }
 )
 
-server.listen(port, () => {
+app.listen(port, () => {
     console.log(`Server running at port: ${port}`)
 })
