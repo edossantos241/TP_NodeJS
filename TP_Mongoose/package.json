@@ -1,0 +1,30 @@
+{
+  "name": "tp_mongoose",
+  "version": "1.0.0",
+  "description": "TP Mongoose",
+  "main": "server2.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.7",
+    "pug": "^2.0.4",
+    "uuid": "^7.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server2.js",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edossantos241/TP_NodeJS.git"
+  },
+  "keywords": [
+    "k"
+  ],
+  "author": "Emma DOS SANTOS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edossantos241/TP_NodeJS/issues"
+  },
+  "homepage": "https://github.com/edossantos241/TP_NodeJS#readme"
+}

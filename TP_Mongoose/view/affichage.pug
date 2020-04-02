@@ -1,0 +1,12 @@
+head
+style 
+        include script.css
+body
+<h1>Voici les villes enregistrees</h1>
+<table>
+<th class='entete'>Identifiant</th>
+<th class='entete'>Ville</th>
+<th class='entete'>Modifier</th>
+each val, index in Contenu
+    <tr class=ligne><td>#{val.id}</td><td>#{val.name}</td><td><a href="/city/#{val.id}">Modifier</a></td></tr>
+</table>
