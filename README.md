@@ -68,3 +68,54 @@ Changement de "Albi" en "Paris":
 Suppression de Paris:
 
 ![alt text](https://github.com/edossantos241/TP_NodeJS/blob/master/ResultatsTP/delete.PNG)
+
+
+TP3 Transformer le serveur des TP précédents pour utiliser MongoDB et Mongoose :
+
+2. Les villes ne sont plus stockées dans le fichier cities.json mais dans la collection cities de la BD MongoDB
+
+![alt text](https://github.com/edossantos241/TP_NodeJS/blob/master/ResultatsTP/BDVide.PNG)
+
+3. Utiliser Mongoose avec NodeJS pour que les appels à l’API mettent à jour la base MongoDB :
+• Ajout d’une ville via POST /city
+Ajout de la ville "Toulouse"
+
+![alt text](https://github.com/edossantos241/TP_NodeJS/blob/master/ResultatsTP/MongooseAjoutVillePostman.PNG)
+
+![alt text](https://github.com/edossantos241/TP_NodeJS/blob/master/ResultatsTP/MongooseAjoutVilleCompass.PNG)
+
+• Récupération des villes via GET /cities
+
+![alt text](https://github.com/edossantos241/TP_NodeJS/blob/master/ResultatsTP/MongooseGetPostman.PNG)
+
+• Modification d’une ville via PUT /city/:id
+Modification de "Toulouse" par "Albi"
+
+![alt text](https://github.com/edossantos241/TP_NodeJS/blob/master/ResultatsTP/MongoosePutPostman.PNG)
+
+![alt text](https://github.com/edossantos241/TP_NodeJS/blob/master/ResultatsTP/MongoosePutCompass.PNG)
+
+• Suppression d’une ville via DELETE /city/:id
+Suppression de la ville "Albi"
+
+![alt text](https://github.com/edossantos241/TP_NodeJS/blob/master/ResultatsTP/MongooseDeletePostman.PNG)
+
+4. Créer un formulaire HTML dans votre template Pug pour ajouter une ville.
+
+![alt text](https://github.com/edossantos241/TP_NodeJS/blob/master/ResultatsTP/MongooseFormulaireAjoutVille.PNG)
+
+5. A la soumission du formulaire :
+• la ville est ajoutée en base de données.
+Ajout des villes "Toulouse" et "Albi"
+
+![alt text](https://github.com/edossantos241/TP_NodeJS/blob/master/ResultatsTP/MongooseFormulaireAjoutResultat.PNG)
+
+• Après le rechargement de la page, la liste des villes affichées dans le tableau HTML est à jour avec la nouvelle ville.
+Après ajout de la ville "Lille"
+
+![alt text](https://github.com/edossantos241/TP_NodeJS/blob/master/ResultatsTP/MongooseAjoutAlbiFormulaireAffichage.PNG)
+
+6. Ajouter la possibilité de modifier une ville
+
+![alt text](https://github.com/edossantos241/TP_NodeJS/blob/master/ResultatsTP/MongooseAjoutBoutonVerif.PNG)
+
